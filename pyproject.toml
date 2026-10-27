@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "andrevists-policyclash"
+version = "0.1.0"
+description = "在策略集合中寻找适用范围重叠但判定相反的规则对"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "andrevists" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://andrevists.github.io"
+Repository = "https://github.com/andrevists/policyclash"
+Issues = "https://github.com/andrevists/policyclash/issues"
+
+[project.scripts]
+policyclash = "policyclash:main"
+
+[tool.setuptools]
+py-modules = ["policyclash"]
